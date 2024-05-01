@@ -13,8 +13,8 @@ const getPatients = (): NonSentivePatient[] => {
 };
 
 const findById = (id: string) => {
-    return patients.find(p => p.id === id)
-}
+    return patients.find(p => p.id === id);
+};
 
 const addPatient = (patient: NewPatient): Patient => {
     const id = uuid();
