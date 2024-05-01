@@ -10,10 +10,9 @@ router.get('/', (_req, res) => {
 });
 
 
-router.get('/:id', (_req, res) => {
-    res.send('entro')
-    //res.send(patientsService.findById(req.params.id))
-})
+router.get('/:id', (req, res) => {
+    res.send(patientsService.findById(req.params.id));
+});
 
 router.post('/:id/entries', (req, res) => {
     try {
@@ -29,9 +28,7 @@ router.post('/:id/entries', (req, res) => {
         }
         return res.status(400).send(errorMessage);
     }
-
-
-})
+});
 
 router.post('/', (req, res) => {
     try {
@@ -41,7 +38,7 @@ router.post('/', (req, res) => {
     } catch (error: unknown) {
         let errorMessage = 'Something went wrong. ';
         if(error instanceof Error) {
-            errorMessage += 'Error: ' + error.message
+            errorMessage += 'Error: ' + error.message;
         }
         res.status(400).send(errorMessage);
     }
