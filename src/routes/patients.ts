@@ -10,8 +10,8 @@ router.get('/', (_req, res) => {
 });
 
 
-router.get('/:id', (_req, res) => {
-    res.send(patientsService.getPatients());
+router.get('/:id', (req, res) => {
+    res.send(patientsService.findById(req.params.id));
 });
 
 router.post('/:id/entries', (req, res) => {
