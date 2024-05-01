@@ -5,7 +5,7 @@
         { "source": "/api/diagnosis", "destination": "src/api/diagnosis.ts"},
         { "source": "/api/patients", "destination": "src/api/patients.ts"},
         { "source": "/api/patients/find/:id/entries", "destination": "src/api/patients.ts"},
-        { "source": "/api/patients/find/:id", "destination": "src/api/patients.ts"}
+        { "source": "/api/patients/:id", "destination": "src/api/patients.ts"}
     ]
     }
     
