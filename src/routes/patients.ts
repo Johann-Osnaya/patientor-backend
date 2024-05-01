@@ -10,7 +10,7 @@ router.get('/', (_req, res) => {
 });
 
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', (req, res) => {
     res.send(patientsService.findById(req.params.id));
 });
 
