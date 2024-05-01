@@ -3,6 +3,7 @@
     "rewrites": [
         { "source": "/api/ping", "destination": "src/api/ping.ts" },
         { "source": "/api/diagnosis", "destination": "src/api/diagnosis.ts"},
+        { "source": "/api/patients", "destination": "src/api/patients.ts"},
         { "source": "/api/patients/:id/entries", "destination": "src/api/patients.ts"},
         { "source": "/api/patients/:id", "destination": "src/api/patients.ts"}
     ]
