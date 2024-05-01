@@ -1,11 +1,11 @@
 {
     "version": 2,
     "rewrites": [
-        { "source": "/api/patients", "destination": "/api/patients.ts"},
-        { "source": "/api/patients/:id/entries", "destination": "/api/patients.ts"},
-        { "source": "/api/patients/:id", "destination": "/api/patients.ts"},
-        { "source": "/api/diagnosis", "destination": "/api/diagnosis.ts"},
-        { "source": "/api/ping", "destination": "/api/ping.ts" }
+        { "source": "/api/patients", "destination": "src/api/patients.ts"},
+        { "source": "/api/patients/:id/entries", "destination": "src/api/patients.ts"},
+        { "source": "/api/patients/:id", "destination": "src/api/patients.ts"},
+        { "source": "/api/diagnosis", "destination": "src/api/diagnosis.ts"},
+        { "source": "/api/ping", "destination": "src/api/ping.ts" }
     ]
     }
     
