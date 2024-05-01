@@ -5,7 +5,7 @@ import toNewPatient from '../utils';
 
 const router = express.Router();
 
-router.get('/:id', (req, res) => {
+router.get('/find/:id', (req, res) => {
     res.send(patientsService.findById(req.params['id']));
 });
 
@@ -14,7 +14,7 @@ router.get('/', (_req, res) => {
     res.send(patientsService.getPatients());
 });
 
-router.post('/:id/entries', (req, res) => {
+router.post('/find/:id/entries', (req, res) => {
     try {
         const patient = patientsService.findById(req.params['id'])
         if(!patient){
