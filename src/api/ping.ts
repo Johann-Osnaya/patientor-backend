@@ -1,6 +1,6 @@
 import app from '../app';
-import patientsRouter from '../routes/patient';
+import pingRouter from '../routes/ping';
 
-app.use('/api/ping', patientsRouter);
+app.use('/api/ping', pingRouter);
 
 export default app;
