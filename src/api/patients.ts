@@ -1,5 +1,5 @@
 import app from '../app';
-import patientsRouter from '../routes/patients';
+import patientsRouter from '../routes/patient';
 
 app.use('/api/patients', patientsRouter);
 
