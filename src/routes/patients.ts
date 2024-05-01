@@ -11,7 +11,7 @@ router.get('/', (_req, res) => {
 
 
 router.get('/:id', (req, res) => {
-    res.send(patientsService.findById(req.params.id));
+    res.send(req.params.id);
 });
 
 router.post('/:id/entries', (req, res) => {
